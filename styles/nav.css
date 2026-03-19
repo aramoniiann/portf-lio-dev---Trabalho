@@ -1,0 +1,17 @@
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    
+    
+}
+
+nav button {
+    background-color: transparent;
+    border: none;
+    color: var(--white);
+    cursor: pointer;
+}
