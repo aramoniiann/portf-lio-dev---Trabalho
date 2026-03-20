@@ -32,7 +32,7 @@
 
 body {
     background-color: var(--white);
-    color: var(--white);
+    color: var(--black);
     text-align: center;
     position: relative;
 }
@@ -110,4 +110,18 @@ body.dark nav a {
     border: none;
     font-size: 24px;
     cursor: pointer;
+}
+
+/* cores do nav por tema */
+nav a {
+    color: var(--black);
+}
+
+body.dark nav a {
+    color: var(--white);
+}
+
+nav {
+    position: relative;
+    z-index: 10;
 }
