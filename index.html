@@ -19,23 +19,22 @@
 
 <div class="container">
 <nav class="menu">
-    <button onclick="toggleTema()">🌙</button>
     <a href="#sobre">Sobre mim</a>
     <a href="#formacao">Formação</a>
     <a href="#portfolio">Portfólio</a>
     <a href="#contato">Contato</a>
 </nav>
-
+<button class="button-1" onclick="toggleTema()">🌙</button>
 <button class="menu-toggle" onclick="toggleMenu()">☰</button>
 
-<section id="sobre" class="blocks blocks-1">
+<section id="sobre" class="blocks">
     <h1>Sobre mim</h1>
     <p>Me chamo Anna Luiza, tenho 19 anos e sou estudante de Análise e Desenvolvimento de Sistemas, com foco em desenvolvimento Full Stack. <br><br>
 Durante minha jornada, venho desenvolvendo projetos práticos para consolidar fundamentos essenciais, como lógica de programação, organização de código e criação de interfaces funcionais e responsivas.<br><br>
 Além da área de tecnologia, gosto de criar conteúdo voltado ao universo tech, o que me permite compartilhar aprendizados e explorar minha criatividade. Também tenho grande interesse por jogos, especialmente pela forma como unem narrativa, design e tecnologia.</p>
 </section>
 
-<section id="formacao" class="blocks blocks-2">
+<section id="formacao" class="blocks">
     <h1>Formação</h1>
     <ul>
         <li>Análise e Desenvolvimento de Sistemas — Uninter<br>
@@ -47,7 +46,7 @@ Além da área de tecnologia, gosto de criar conteúdo voltado ao universo tech,
     </ul>
 </section>
 
-<section id="portfolio" class="blocks blocks-3">
+<section id="portfolio" class="blocks">
     <h1>Portfólio</h1>
     <ul>
         <li>Wiki Temática — Silent Hill 2<br>
@@ -61,10 +60,10 @@ Projeto prático voltado para desenvolvimento front-end, com foco em layout, res
     </ul>
 </section>
 
-<section id="contato" class="blocks blocks-4">
+<section id="contato" class="blocks">
     <h1>Contato</h1>
 
-    <form onsubmit="enviarFormulario(event)">
+    <form class="form-contato" onsubmit="enviarFormulario(event)">
         <input type="text" id="nome" placeholder="Nome">
         <input type="email" id="email" placeholder="E-mail">
         <textarea id="mensagem" placeholder="Mensagem"></textarea>
