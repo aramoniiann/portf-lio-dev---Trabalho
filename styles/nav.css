@@ -1,17 +1,37 @@
 nav {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 0;
     padding: 20px;
     margin-bottom: 2rem;
     margin-top: 2rem;
     
+    font: var(--title-lg);
     
 }
 
 nav button {
     background-color: transparent;
-    border: none;
+    
     color: var(--white);
     cursor: pointer;
+}
+
+nav a {
+    color: var(--black);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 30px;
+    padding: 0 30px;
+    border-right: 1px solid var(--gray-300);
+    display: flex;
+    align-items: center;
+}
+
+nav a:last-child {
+    border-right: none;
+}
+
+nav a:hover {
+    color: var(--gray-300);
 }
