@@ -3,8 +3,18 @@ nav {
     justify-content: center;
     gap: 0;
     padding: 20px;
-    margin: 2rem 0;
-    flex-wrap: wrap; 
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    position: relative;
+    font: var(--title-lg);
+    
+}
+
+nav button {
+    background-color: transparent;
+    
+    color: var(--white);
+    cursor: pointer;
 }
 
 nav a {
@@ -12,11 +22,12 @@ nav a {
     text-decoration: none;
     font-weight: 700;
     font-size: 30px;
-    padding: 10px 20px;
+    padding: 0 30px;
     border-right: 1px solid var(--gray-300);
+    display: flex;
+    align-items: center;
 }
 
-/* remove borda do último */
 nav a:last-child {
     border-right: none;
 }
@@ -25,15 +36,40 @@ nav a:hover {
     color: var(--gray-300);
 }
 
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* MOBILE */
 @media (max-width: 768px) {
     nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
         gap: 10px;
     }
 
+    .menu.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+        margin: 10px auto;
+    }
+
     nav a {
-        font-size: 18px;
-        padding: 8px 12px;
-        border-right: none; /* tira as linhas no mobile */
+        border: none;
+        padding: 10px;
+        font-size: 20px;
     }
 }
-
