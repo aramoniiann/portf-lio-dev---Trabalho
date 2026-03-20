@@ -85,3 +85,18 @@ a:hover {
     color: var(--gray-100);
     text-decoration: underline;
 }
+
+body.dark {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+/* muda imagem de fundo */
+body.dark::before {
+    background-image: url('../assets/bgimage-black.jpg');
+}
+
+/* nav branco no modo escuro */
+body.dark nav a {
+    color: var(--white);
+}
