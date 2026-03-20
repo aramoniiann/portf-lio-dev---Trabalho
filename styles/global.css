@@ -64,3 +64,13 @@ h1 {
     font: var(--title-lg);    border-bottom: 2px solid var(--gray-300);
     padding-bottom: 0.5rem;}
 
+    ul {
+        list-style: square;
+        margin-top: 12px;
+        font: var(--title-sm);
+        text-align: left;
+    }
+
+    li {
+        padding: 10px;
+    }
