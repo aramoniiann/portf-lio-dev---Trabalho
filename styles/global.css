@@ -100,3 +100,14 @@ body.dark::before {
 body.dark nav a {
     color: var(--white);
 }
+
+.button-1 {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    color: var(--white);
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}

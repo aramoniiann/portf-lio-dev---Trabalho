@@ -5,6 +5,7 @@ nav {
     padding: 20px;
     margin-bottom: 2rem;
     margin-top: 2rem;
+    position: relative;
     
     font: var(--title-lg);
     
