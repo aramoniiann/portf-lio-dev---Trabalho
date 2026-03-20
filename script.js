@@ -30,8 +30,3 @@ function enviarFormulario(event) {
 function toggleTema() {
     document.body.classList.toggle("dark");
 }
-
-function toggleMenu() {
-    const menu = document.querySelector(".menu");
-    menu.classList.toggle("active");
-}

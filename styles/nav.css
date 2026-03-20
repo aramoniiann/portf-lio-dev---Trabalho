@@ -3,19 +3,8 @@ nav {
     justify-content: center;
     gap: 0;
     padding: 20px;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-    position: relative;
-    
-    font: var(--title-lg);
-    
-}
-
-nav button {
-    background-color: transparent;
-    
-    color: var(--white);
-    cursor: pointer;
+    margin: 2rem 0;
+    flex-wrap: wrap; 
 }
 
 nav a {
@@ -23,12 +12,11 @@ nav a {
     text-decoration: none;
     font-weight: 700;
     font-size: 30px;
-    padding: 0 30px;
+    padding: 10px 20px;
     border-right: 1px solid var(--gray-300);
-    display: flex;
-    align-items: center;
 }
 
+/* remove borda do último */
 nav a:last-child {
     border-right: none;
 }
@@ -37,5 +25,15 @@ nav a:hover {
     color: var(--gray-300);
 }
 
+@media (max-width: 768px) {
+    nav {
+        gap: 10px;
+    }
 
+    nav a {
+        font-size: 18px;
+        padding: 8px 12px;
+        border-right: none; /* tira as linhas no mobile */
+    }
+}
 
