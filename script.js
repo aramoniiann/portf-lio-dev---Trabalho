@@ -1,3 +1,4 @@
+// Função para lidar com o envio do formulário
 function enviarFormulario(event) {
     event.preventDefault();
 
@@ -27,10 +28,12 @@ function enviarFormulario(event) {
     document.getElementById("mensagem").value = "";
 }
 
+// Função para alternar o modo escuro
 function toggleTema() {
     document.body.classList.toggle("dark");
 }
 
+// Função para alternar o menu móvel
 function toggleMenu() {
     const menu = document.querySelector(".menu");
     menu.classList.toggle("active");
